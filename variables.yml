@@ -1,0 +1,12 @@
+---
+httpd_port: 80
+httpd_owner: "apache"
+httpd_group: "apache"
+httpd_hostname: "www.example.com"
+doc_root: "/var/www/html/{{httpd_hostname}}"
+git_url: "https://github.com/hemanthsaju7/aws-elb-site.git"
+clone_dir: "/var/website/"
+packages:
+  - httpd
+  - php
+  - git
