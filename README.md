@@ -8,13 +8,14 @@ In the second play, I'm setting up apache webserver by cloning a demo php websit
 
 
 Packages required on master machine
-===
+```
 # yum install python3
 # yum install python3-pip
 # pip3 install boto boto3 botocore
 # pip3 install ansible
-
+```
 Installing required aws modules
-===
+```
 # ansible-galaxy collection install amazon.aws
 # ansible-galaxy collection install community.aws
+```
