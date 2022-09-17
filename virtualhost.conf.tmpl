@@ -1,0 +1,17 @@
+<virtualhost *:{{httpd_port}}>
+
+  servername {{httpd_hostname}}
+  documentroot /var/www/html/{{httpd_hostname}}
+  directoryindex index.php index.html
+  
+  #for redirecting from http to https
+  
+  RewriteEngine On                   
+  RewriteCond %{HTTP:X-Forwarded-Proto} =http
+  RewriteRule . https://{{httpd_hostname}} [L,R=permanent]
+
+  <directory  /var/www/html/{{httpd_hostname}}>
+    allowoverride all
+  </directory>
+
+</virtualhost>
