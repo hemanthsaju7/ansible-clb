@@ -1,0 +1,10 @@
+---
+project: "test"
+access_key: "your_access_key"  #create user with programmatic access and full permission
+secret_key: "your_secret_key"
+region: "ap-south-1"
+instance_count: 3
+ami_id: "ami-06489866022e12a14"
+zone_id: "your-zone-id"
+domain: "domain-name"
+ssl_id : "arn-of-ssl"
